@@ -1,0 +1,26 @@
+services:
+  server1:
+    build: .
+    command: ["/bin/server", "--id=1", "--docker=true", "--logs=/app/logs"]
+    ports: ["9001:9001"]
+    volumes: ["./logs:/app/logs"]
+  server2:
+    build: .
+    command: ["/bin/server", "--id=2", "--docker=true", "--logs=/app/logs"]
+    ports: ["9002:9002"]
+    volumes: ["./logs:/app/logs"]
+  server3:
+    build: .
+    command: ["/bin/server", "--id=3", "--docker=true", "--logs=/app/logs"]
+    ports: ["9003:9003"]
+    volumes: ["./logs:/app/logs"]
+  server4:
+    build: .
+    command: ["/bin/server", "--id=4", "--docker=true", "--logs=/app/logs"]
+    ports: ["9004:9004"]
+    volumes: ["./logs:/app/logs"]
+  server5:
+    build: .
+    command: ["/bin/server", "--id=5", "--docker=true", "--logs=/app/logs"]
+    ports: ["9005:9005"]
+    volumes: ["./logs:/app/logs"]
